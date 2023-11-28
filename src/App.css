@@ -132,6 +132,37 @@ h5{
     position: fixed;
     z-index: 5;
 }
+
+.top{
+    background-color: lime;
+    color: rgb(253, 250, 250);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 0px 30px;
+    font-size: 30px;
+    display: flex;
+}
+.top .uname{
+    width: 40%;
+}
+.top svg{
+    margin-left: 30px;
+}
+.top .larr{
+    width: 5%;
+        font-size: 30px;
+        font-weight:bolder;
+}
+.uicon{
+    width: 50%;
+    text-align: right;
+}
+.top a{
+    color: white;
+    margin-right: 20px;
+}
 .text{
     
     background-color:rgb(157, 163, 157);
@@ -210,5 +241,11 @@ scroll-snap-type: both mandatory;
     }
     .message input{
         width: 65%;
+    }
+    .uicon{
+        width: 35%;
+    }
+    .top svg{
+        margin-left: 10px;
     }
 }
