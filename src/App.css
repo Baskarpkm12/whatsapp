@@ -1,0 +1,214 @@
+a{
+    text-decoration: none;
+    color: black;
+}
+.container1{
+    background-color: rgb(0, 255, 0);
+    border-radius: 5px;
+    width: 100%;
+    padding-bottom: 20px;
+}
+.bar{
+    display: flex;
+}
+.bar h1{
+    color: white;
+    padding:  20px;
+    margin-bottom: 0;
+    margin-top: 0;
+    font-size: 40px;
+}
+.whatsapp{
+    width: 70%;
+}
+.icon{
+    width: 30%;
+}
+.bar h4{
+    
+    color: rgb(248, 246, 246);
+    padding:  40px 0;
+    margin-bottom: 0;
+    margin-top: 0;
+    font-size: 30px;
+    text-align: right;
+}
+.bar svg{
+    margin: 0 30px;
+}
+
+.link{
+    display: flex;
+    justify-content: space-around;
+}
+
+.link a{
+   color:white;
+   text-decoration: none;
+   font-size: 20px;
+}
+.active{
+    color: white;
+    background-color: rgb(107, 0, 128);
+    border-radius: 5px;
+    padding: 5px 5px;
+    text-decoration: none;
+}
+.contact a{
+    text-decoration: none;
+    color: black;
+}
+.container2{
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 10% 90%;
+}
+.logo img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.name h2{
+    margin-top: 10px;
+}
+.name{
+    border-bottom: 2px solid rgb(224, 207, 207);
+}
+.name .type{
+    color: rgb(13, 226, 13);
+    padding-left: 5px;
+    margin-top: 0;
+}
+.name h4{
+    color: rgb(89, 94, 89);
+    padding-left: 5px;
+    margin-top: 0;
+}
+h5{
+    text-align: center;
+}
+.st{
+    border:5px solid lime;
+}
+.message{
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+    width: 100%;
+}
+.message input{
+    width: 90%;
+    border: 1px solid rgb(201, 189, 189);
+    height: 30px;
+    border-radius: 20px;
+    padding: 10px;
+}
+.message button{
+    margin-left: 10px;
+    background-color:lime;
+    color: white;
+    padding: 5px 10px;
+    border: 0;
+    border-radius: 10px;
+    font-size: 20px;
+
+}
+.page{
+    width: 100%;
+    overflow:auto;
+ 
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    min-height: 50px;
+    max-height: 300px;
+    position: fixed;
+    bottom: 80px;
+    z-index: 3;
+    
+}
+.head{
+    position: fixed;
+    z-index: 5;
+}
+.text{
+    
+    background-color:rgb(157, 163, 157);
+    width: fit-content;
+    padding: 10px 15px;
+    border-radius: 10px;
+   margin: 10px 30px;
+    text-align: right;
+}
+.addUser{
+    position: fixed;
+    right:20px;
+    bottom:50px;
+    width:30px;
+    height: 30px;
+    background: lime;
+    border-radius: 50%;
+    display: grid;
+    place-content: center;
+    padding: 8px;
+    color:#fff;
+    cursor: pointer;
+}
+.addUser:hover{
+    background: green;
+}
+
+.videos-container{
+    background: #666;
+    width:100%;
+    height:95vh;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.videos{
+height:100%;
+width:300px;
+background:inherit;
+overflow-x: auto;
+/* display: flex; */
+/* justify-content: start; */
+/* align-items: center; */
+scroll-snap-type: both mandatory;   
+/* gap:10px; */
+}
+.videos::-webkit-scrollbar{
+    display: none;
+}
+.video{
+    position: relative;
+    /* left:0px; */
+    width:100%;
+    scroll-snap-align: center;
+}
+@media(max-width:476px){
+    .whatsapp{
+        width: 40%;
+    }
+    .icon{
+        width: 60%;
+    }
+    .bar svg{
+        margin: 0 5px;
+    }
+    .container2{
+        grid-template-columns: 35% 65%;
+    }
+    .videos-container h3{
+        position: fixed;
+        right: 15px;
+        /* bottom: 50px; */
+    }
+    .message input{
+        width: 65%;
+    }
+}
